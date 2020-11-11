@@ -5,6 +5,6 @@ RUN apt-get update && apt-get install -y make build-essential libssl-dev zlib1g-
 RUN apt-get update && apt-get install -y pkg-config
 
 # install rust toolchains and tools
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && echo 'export PATH="$HOME/.cargo/bin:$PATH"' >~/.bashrc && /root/.cargo/bin/cargo install cargo-deb && /root/.cargo/bin/cargo install cargo-tarpaulin && /root/.cargo/bin/cargo install cargo-geiger
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && echo 'export PATH="$HOME/.cargo/bin:$PATH"' >~/.bashrc && /root/.cargo/bin/cargo install cargo-deb && /root/.cargo/bin/cargo install cargo-tarpaulin && /root/.cargo/bin/cargo install cargo-geiger && /root/.cargo/bin/cargo install cargo-audit
  
 EXPOSE 80 443
