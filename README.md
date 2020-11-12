@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/sitkevij/rust-linux-dev/workflows/ci/badge.svg)](https://github.com/sitkevij/rust-linux-dev/actions)
+
 # rust-linux-dev
 
 Some rust development tools are only available on linux. This linux docker image can be used to run rust dev tools.

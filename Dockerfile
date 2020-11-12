@@ -9,6 +9,7 @@ RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
 	&& /root/.cargo/bin/cargo install cargo-tarpaulin \
 	&& /root/.cargo/bin/cargo install cargo-geiger \
 	&& /root/.cargo/bin/cargo install cargo-audit \
-	&& /root/.cargo/bin/cargo install cargo-edit
+	&& /root/.cargo/bin/cargo install cargo-edit \
+	&& /root/.cargo/bin/cargo install cargo-show
 
 EXPOSE 80 443
