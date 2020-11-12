@@ -18,8 +18,13 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          push: false
+          push: true
           tags: sitkevij/rust-linux-dev:latest
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: sitkevij/rust-linux-dev/rust-linux-dev
+          tag_with_ref: true
           # build-args: |
           #   arg1=none
           #   arg2=value2
